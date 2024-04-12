@@ -1,1 +1,16 @@
-inde
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@keyframes menu {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.menu {
+  animation: menu ease-in-out 0.2s;
+}
