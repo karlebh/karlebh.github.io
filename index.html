@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
@@ -16,7 +17,7 @@
 
   <body>
     <main class="mx-auto">
-      <header class="bg-[#ff9160] text-white lg:px-10 relative">
+      <header id="header" class="bg-[#ff9160] text-white lg:px-10 relative">
         <div
           class="flex justify-between items-center pt-8 pb-4 max-w-6xl mx-auto"
         >
@@ -78,14 +79,14 @@
           <div class="hidden lg:block">
             <a
               href=""
-              class="border border-2 hover:bg-white hover:text-[#ff9160] transition duration-500 ease-in-out py-3 px-9 rounded-3xl"
+              class="border border-2 hover:bg-white hover:text-[#ff9160] transition duration-250 ease-in-out py-3 px-9 rounded-3xl"
               >Let's Talk</a
             >
           </div>
         </div>
         <div
           id="mobile-menu"
-          class="lg:hidden menu hidden flex-col bg-[#ff9160] absolute w-full shadow-lg"
+          class="lg:hidden menu hidden flex-col bg-black absolute w-full shadow-lg"
         >
           <a href="https://karlebh.github.io/" class="my-3 px-3 border-shadow"
             >Home</a
@@ -193,13 +194,174 @@
         </div>
       </section>
 
-      <section class="py-4 px-3 bg-zinc-200">
+      <section class="py-4 px-3 bg-gray-200">
         <div class="max-w-6xl mx-auto">
           <div class="font-normal text-xl py-5">
             <h1 class="font-medium text-2xl">My Projects</h1>
           </div>
+
+          <div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+              <div>
+                <a
+                  target="_blank"
+                  href="https://items-indol.vercel.app/product/2"
+                >
+                  <h1>Items</h1></a
+                >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, qui architecto provident veritatis esse deserunt
+                  consequuntur ducimus facilis, quos debitis repudiandae nam,
+                  voluptate recusandae unde consectetur repellendus eligendi
+                  corrupti in.
+                </p>
+              </div>
+              <div>
+                <a target="_blank" href="https://forge-psi.vercel.app/#"
+                  >Forge</a
+                >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, qui architecto provident veritatis esse deserunt
+                  consequuntur ducimus facilis, quos debitis repudiandae nam,
+                  voluptate recusandae unde consectetur repellendus eligendi
+                  corrupti in.
+                </p>
+              </div>
+              <div>
+                <a target="_blank" href="https://store-gules-chi.vercel.app/"
+                  >Store</a
+                >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, qui architecto provident veritatis esse deserunt
+                  consequuntur ducimus facilis, quos debitis repudiandae nam,
+                  voluptate recusandae unde consectetur repellendus eligendi
+                  corrupti in.
+                </p>
+              </div>
+              <div>
+                <a target="_blank" href="https://github.com/karlebh/Forume"
+                  >Forume</a
+                >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Nulla, qui architecto provident veritatis esse deserunt
+                  consequuntur ducimus facilis, quos debitis repudiandae nam,
+                  voluptate recusandae unde consectetur repellendus eligendi
+                  corrupti in.
+                </p>
+              </div>
+            </div>
+
+            <div class="mt-10 flex justify-center">
+              <a
+                href="https://github.com/karlebh"
+                target="_blank"
+                class="border border-2 border-[#ff9160] hover:bg-[#ff9160] hover:text-white transition duration-250 ease-in-out py-3 px-9 rounded-3xl"
+                >More Work</a
+              >
+            </div>
+          </div>
         </div>
       </section>
+
+      <section class="py-4 px-3 bg-gray-300">
+        <div class="max-w-6xl mx-auto">
+          <div class="font-normal text-xl py-5">
+            <h1 class="font-medium text-2xl">About Me</h1>
+          </div>
+
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aut.
+            Officia, possimus ex non mollitia laboriosam enim officiis?
+            Repudiandae doloribus tenetur voluptate odit quis alias, quasi esse
+            quae reprehenderit recusandae?
+          </div>
+
+          <div>
+            <h1>Tech Stack:</h1>
+
+            <div>
+              <div>PHP/Laravel</div>
+              <div>Javascript/React/Vue</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-black pt-16 p-3 pb-8">
+        <div class="max-w-6xl mx-auto text-white lg:space-y-20">
+          <div
+            class="flex flex-col lg:flex-row lg:item-center lg:justify-between"
+          >
+            <div>
+              <h1 class="text-xl font-medium">Karleb</h1>
+              <p></p>
+            </div>
+
+            <div>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+
+            <div
+              class="py-16 lg:p-0 flex flex-col sm:flex-row gap-y-8 sm:gap-x-8"
+            >
+              <div>
+                <a
+                  href=""
+                  class="inline-block bg-[#ff9160] text-white transition duration-250 ease-in-out py-3 px-9 rounded-3xl"
+                  >Let's Talk</a
+                >
+              </div>
+              <div>
+                <a
+                  href=""
+                  class="inline-block border border-[1px] hover:bg-white hover:text-[#ff9160] transition duration-250 ease-in-out py-3 px-9 rounded-3xl"
+                  >Link To CV</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col lg:flex-row item-baseline lg:justify-between"
+          >
+            <p class="mb-3 lg:mb-0">
+              Copyright &copy; <span id="year"></span> All rights reserved
+            </p>
+            <div class="flex space-x-8 sm:space-x-12 mt-8 lg:m-0">
+              <a href="">Home</a>
+              <a href="">Work</a>
+              <a href="">Service</a>
+              <a href="">Blog</a>
+              <a href="">Contact</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <a
+        href="#header"
+        id="goUp"
+        class="bg-[#ff9160] fixed right-5 bottom-5 z-20 p-3 rounded-full"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="4"
+          stroke="currentColor"
+          class="w-9 h-9 text-white"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 6.75 12 3m0 0 3.75 3.75M12 3v18"
+          />
+        </svg>
+      </a>
     </main>
 
     <script src="index.js"></script>
